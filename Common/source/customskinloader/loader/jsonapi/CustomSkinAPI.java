@@ -30,13 +30,12 @@ public class CustomSkinAPI implements JsonAPILoader.IJsonAPI {
         @Override public String getRoot()         { return "https://skin.prinzeugen.net/"; }
     }
 
-    // // OneSkin has been removed temporarily
-    // public static class OneSkin extends JsonAPILoader.DefaultProfile {
-    //     public OneSkin(JsonAPILoader loader) { super(loader); }
-    //     @Override public String getName()    { return "OneSkin"; }
-    //     @Override public int getPriority()   { return 500; }
-    //     @Override public String getRoot()    { return "http://fleey.cn/skin/skin_user/skin_json.php/"; }
-    // }
+     public static class KemonoSkin extends JsonAPILoader.DefaultProfile {
+         public OneSkin(JsonAPILoader loader) { super(loader); }
+         @Override public String getName()    { return "KemonoSkin"; }
+         @Override public int getPriority()   { return 500; }
+         @Override public String getRoot()    { return "https://skin.kemono-network.com/"; }
+     }
 
     private static final String TEXTURES="textures/";
     private static final String SUFFIX=".json";
