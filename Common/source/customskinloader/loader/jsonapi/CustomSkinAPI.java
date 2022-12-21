@@ -31,7 +31,7 @@ public class CustomSkinAPI implements JsonAPILoader.IJsonAPI {
     }
 
      public static class KemonoSkin extends JsonAPILoader.DefaultProfile {
-         public OneSkin(JsonAPILoader loader) { super(loader); }
+         public KemonoSkin(JsonAPILoader loader) { super(loader); }
          @Override public String getName()    { return "KemonoSkin"; }
          @Override public int getPriority()   { return 500; }
          @Override public String getRoot()    { return "https://skin.kemono-network.com/"; }
